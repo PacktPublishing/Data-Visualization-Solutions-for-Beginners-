@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#Author @ Mohammed \n#Pact Publishing Section 4\n#Code used to Fetch/install/Load all libraries required\n\n#setwd(\"D:/Packt_R_Codes/DemoR_Section4\")\n\nprint(\"============== Beginning to load libraries  ===================\")\n\n#Function To check if \ncheckInstallLoad <- function(libName) \n{\n  if(!require(libName, character.only=TRUE)) \n  {\n    install.packages(libName)\n    require(libName, character.only=TRUE)\n  }\n}\n\n\ncheckInstallLoad(\"class\")\ncheckInstallLoad(\"data.table\")\ncheckInstallLoad(\"ggplot2\")\ncheckInstallLoad(\"treemap\")\n\nprint(\"============== Completed loading libraries  ===================\")",
+    "created" : 1509123774166.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "112207112",
+    "id" : "C55341A0",
+    "lastKnownWriteTime" : 1509124331,
+    "last_content_update" : 1509124331930,
+    "path" : "C:/Users/moham/Desktop/PACKT_COMPLETE/Section 4/Code Files/R/DemoR_Section4/Libraries.R",
+    "project_path" : "Libraries.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

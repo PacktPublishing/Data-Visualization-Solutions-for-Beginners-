@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#Author @ Mohammed \n#Pact Publishing Section 5\n#Code used to Fetch/install/Load all libraries required\n\n#Loading Libraries\n#source(\"Libraries.R\")\n\n#Loading data in R environment\ndata<-read.csv(\"diabetes.csv\",header = T)\n\n#View(head(data))\n\n#Explanation of data \n\n#Several constraints were placed on the selection of these instances from a \n#larger database. In particular, all patients here are females at least 21 years\n#old of Pima Indian heritage.\n\n#Pregnancies specifies number of times a person has been pregnant\n#summary(as.factor(data$Pregnancies))\n\n#Glucose is Plasma glucose concentration a 2 hours in an oral glucose tolerance test \n#summary(data$Glucose)\n\n#Blood Pressure -> Diastolic blood pressure (mm Hg) \n#summary(data$BloodPressure)\n\n#Skin Thickness -> Triceps skin fold thickness (mm) \n#summary(data$SkinThickness)\n\n#Insulin -> 2-Hour serum insulin (mu U/ml) \n#summary(data$Insulin)\n\n#BMI -> Body mass index (weight in kg/(height in m)^2) \n#summary(data$BMI)\n\n#Diabetes pedigree function \n#summary(data$DiabetesPedigreeFunction)\n\n#Age\n#summary(data$Age)\n\n#Outcome -> 1->Diabetes 0->No Diabetes\n#summary(as.factor(data$Outcome))\n\n#Data seems fairly straight forward with no missing values , Hence moving on ahead\n#with EDA\n\nprint(\"=======================Data Loaded=========================================\")\n",
+    "created" : 1509123787741.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1017771619",
+    "id" : "3AAA156A",
+    "lastKnownWriteTime" : 1509124854,
+    "last_content_update" : 1509124854153,
+    "path" : "C:/Users/moham/Desktop/PACKT_COMPLETE/Section 4/Code Files/R/DemoR_Section4/Data.R",
+    "project_path" : "Data.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

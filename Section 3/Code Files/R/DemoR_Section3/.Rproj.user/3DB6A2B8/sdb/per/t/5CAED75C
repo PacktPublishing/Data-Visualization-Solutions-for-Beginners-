@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Author @ Mohammed \n# Pact Publishing Section 3\n# Code used to load data from Mysql \nsource(\"Libraries.r\")\n\nmydb = dbConnect(MySQL(), user='root', password='root', dbname='packt', host='127.0.0.1')\n\ndbListTables(mydb)\n\nrs = dbSendQuery(mydb, \"select * from adultdataset\")\n\ndata = fetch(rs, n=-1)\nView(head(data))\n",
+    "created" : 1506877018607.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3824746166",
+    "id" : "5CAED75C",
+    "lastKnownWriteTime" : 1506878266,
+    "last_content_update" : 1506878266153,
+    "path" : "D:/Packt_R_Codes/DemoR_Section3/LoadDataMysql.R",
+    "project_path" : "LoadDataMysql.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

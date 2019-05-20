@@ -1,0 +1,2 @@
+"0","dat<-read.csv(""diabetes.csv"",header = T)"
+"0","head(dat)"

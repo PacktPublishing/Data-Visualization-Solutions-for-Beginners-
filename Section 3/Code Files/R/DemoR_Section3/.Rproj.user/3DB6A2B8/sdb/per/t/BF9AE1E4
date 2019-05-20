@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Author @ Mohammed \n# Pact Publishing Section 3\n# Code used to load data\nsource(\"Libraries.r\")\n\n#Downloading adult income data set from UCI\nprint(\"Downloading Data\")\n\ndata = read.table(\"http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data\",\n                  sep=\",\",header=F,\n                  col.names=c(\"age\", \"type_employer\", \"fnlwgt\", \"education\", \n                              \"education_num\",\"marital\", \"occupation\", \"relationship\", \"race\",\"sex\",\n                              \"capital_gain\", \"capital_loss\", \"hr_per_week\",\"country\", \"income\"),\n                  fill=FALSE,strip.white=T)\n\nprint(\"Data Loaded\")\nprint(\"Loading datasets complete.\")\n\nwrite.csv(x = data,file = \"AdultDataSet.csv\")\n",
+    "created" : 1506356730959.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2368945196",
+    "id" : "BF9AE1E4",
+    "lastKnownWriteTime" : 1506357097,
+    "last_content_update" : 1506357097,
+    "path" : "D:/Packt_R_Codes/DemoR_Section3/Data.R",
+    "project_path" : "Data.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,512 @@
+res = xgb.cv(xgb_param_adult,
+dtrain,
+nrounds=700,   # changed
+nfold=10,           # changed
+early_stopping_rounds=50,
+print_every_n = 10,
+verbose= 1)
+xgb.fit = xgb.train(xgb_param_adult, dtrain, 500)
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.5, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+xgb_param_adult = list(
+nrounds = c(700),
+eta = 0.01,#eta between(0.01-0.2)
+max_depth = 5, #values between(3-10)
+subsample = 0.7,#values between(0.5-1)
+colsample_bytree = 0.9,#values between(0.5-1)
+num_parallel_tree=1,
+objective='binary:logistic',
+min_child_weight = 1,
+booster='gbtree'
+)
+res = xgb.cv(xgb_param_adult,
+dtrain,
+nrounds=700,   # changed
+nfold=10,           # changed
+early_stopping_rounds=50,
+print_every_n = 10,
+verbose= 1)
+xgb.fit = xgb.train(xgb_param_adult, dtrain, 500)
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.5, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+xgb_param_adult = list(
+nrounds = c(700),
+eta = 0.02,#eta between(0.01-0.2)
+max_depth = 5, #values between(3-10)
+subsample = 0.7,#values between(0.5-1)
+colsample_bytree = 0.9,#values between(0.5-1)
+num_parallel_tree=1,
+objective='binary:logistic',
+min_child_weight = 1,
+booster='gbtree'
+)
+xgb_param_adult = list(
+nrounds = c(700),
+eta = 0.02,#eta between(0.01-0.2)
+max_depth = 5, #values between(3-10)
+subsample = 0.7,#values between(0.5-1)
+colsample_bytree = 0.9,#values between(0.5-1)
+num_parallel_tree=1,
+objective='binary:logistic',
+min_child_weight = 1
+)
+res = xgb.cv(xgb_param_adult,
+dtrain,
+nrounds=700,   # changed
+nfold=10,           # changed
+early_stopping_rounds=50,
+print_every_n = 10,
+verbose= 1)
+xgb.fit = xgb.train(xgb_param_adult, dtrain, 500)
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.5, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+xgb_param_adult = list(
+nrounds = c(700),
+eta = 0.02,#eta between(0.01-0.2)
+max_depth = 5, #values between(3-10)
+subsample = 0.7,#values between(0.5-1)
+colsample_bytree = 0.5,#values between(0.5-1)
+num_parallel_tree=1,
+objective='binary:logistic',
+min_child_weight = 1
+)
+res = xgb.cv(xgb_param_adult,
+dtrain,
+nrounds=700,   # changed
+nfold=10,           # changed
+early_stopping_rounds=50,
+print_every_n = 10,
+verbose= 1)
+xgb.fit = xgb.train(xgb_param_adult, dtrain, 500)
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.5, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+xgb_param_adult = list(
+nrounds = c(700),
+eta = 0.02,#eta between(0.01-0.2)
+max_depth = 5, #values between(3-10)
+subsample = 0.7,#values between(0.5-1)
+colsample_bytree = 0.7,#values between(0.5-1)
+num_parallel_tree=1,
+objective='binary:logistic',
+min_child_weight = 1,
+booster='gbtree'
+)
+res = xgb.cv(xgb_param_adult,
+dtrain,
+nrounds=700,   # changed
+nfold=10,           # changed
+early_stopping_rounds=50,
+print_every_n = 10,
+verbose= 1)
+xgb.fit = xgb.train(xgb_param_adult, dtrain, 500)
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.5, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.3, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.4, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.45, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.5, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.52, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.55, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.57, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+preds <- ifelse(predict(xgb.fit, newdata=as.matrix(testing_data[,-9])) >=0.59, 1, 0)
+caret::confusionMatrix(testing_data[,9], preds, mode = "prec_recall")
+auc<-roc(testing_data[,9],predict(xgb.fit,dtest))
+print(auc)
+plot(auc,print.auc=T)
+rm(list=ls())
+install.packages("mongolite")
+library(mongolite)
+library(RMongo)
+mongo<-mongoDbConnect(dbName = "PIMA",host = 127.0.0.1,port=)
+mongo<-mongoDbConnect(dbName = "PIMA",host = 127.0.0.1,port=27017)
+mongo<-mongoDbConnect(dbName = "PIMA",host = "127.0.0.1",port=27017)
+dbShowCollections(mongo)
+dbAuthenticate(mongo)
+dbAuthenticate(mongo,username = "",password = "")
+dbShowCollections(mongo)
+dbAuthenticate(mongo,username = "admin",password = "")
+dbAuthenticate(mongo,username = "admin",password = "admin")
+dbAuthenticate(mongo)
+mongo<-mongoDbConnect("PIMA")
+dbShowCollections(mongo)
+mongo<-mongoDbConnect("users")
+dbShowCollections(mongo)
+result<-dbGetQuery(mongo,"PIMA","",0,0)
+mongo<-mongoDbConnect("PIMA")
+dbShowCollections("PIMA")
+dbShowCollections(mongo)
+dbDisconnect(mongo)
+rm(list=ls())
+library(RMongo)
+mongo<-mongoDbConnect("mydb")
+dbShowCollections(mongo)
+mongo<-mongoDbConnect("users")
+library(mongolite)
+rm(list=ls())
+library(mongolite)
+c=mongo(collection = "diabetes",db="PIMA")
+c$distinct("Outcome")
+c$count()
+library(devtools)
+install.packages("devtools")
+library(devtools)
+install_github(repo = "mongosoup/rmongodb")
+rm(list=ls())
+library(RMongo)
+mongo<-mongoDbConnect("local","localhost",27017)
+results<-dbGetQuery(mongo,"PIMA",{})
+results<-dbGetQuery(mongo,"MBA",{})
+install.packages("Rserve")
+library(Rserve)
+Rserve()
+source("Libraries.R")
+library(Rserve)
+Rserve()
+source("Data.R")
+summary(as.factor(data$outcome))
+summary(data$outcome)
+summary(as.factor(data$outcome))
+a<-as.factor(data$outcome)
+a
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+as.factor(data$Outcome)
+summary(data$Outcome)
+summary(as.factor(data$Outcome))
+install.packages("sparklyr")
+library(sparklyr)
+spark_install(version = "1.6.2")
+sc <- spark_connect(master = 192.168.17.139)
+sc <- spark_connect(master = "192.168.17.139")
+source("Libraries.R")
+source("Data.R")
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+boxplot(data$BloodPressure~data$Outcome)
+boxplot(data$SkinThickness~data$Outcome)
+boxplot(data$Insulin~data$Outcome)
+boxplot(data$BMI~data$Outcome)
+boxplot(data$DiabetesPedigreeFunction~data$Outcome)
+boxplot(data$Age~data$Outcome)
+data_n<-data[,c(2,3,4,5,6,7,8)]
+plot(data_n)
+cor<-cor(data)
+corrplot(cor)
+pr.out=prcomp(data_n,scale=T)
+pr.out$rotation
+biplot(pr.out,scale=0)
+pr.out$rotation=-pr.out$rotation
+pr.out$x=-pr.out$x
+biplot(pr.out,scale=0,cex=0.8)
+Print("============================End OF EDA==================================")
+a=5
+a=5
+a=5
+setwd("D:/Packt_R_Codes/DemoR_Section4")
+source("Libraries.R")
+source("Data.R")
+View(head(data))
+hist(data$age)
+hist(as.numeric(data$age))
+summary(data$age)
+summary(as.numeric(data$age))
+hist(as.numeric(data$Age))
+hist(data$Age)
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+barplot(data$Age)
+barplot(data$Pregnancies)
+barplot(as.factor(data$Pregnancies))
+barplot(data$Pregnancies)
+barplot(data$Pregnancies,space = "0.05")
+barplot(data$Pregnancies,space = 0.5)
+barplot(data$Pregnancies,space = 5)
+barplot(data$Pregnancies,space = 100)
+barplot(data$Outcome)
+barplot(x=data$Outcome)
+barplot(data$Outcome)
+barplot(as.factor(data$Outcome))
+barplot(table(as.factor(data$Outcome)))
+barplot(table(as.factor(data$Pregnancies)))
+barplot(table(as.factor(data$Pregnancies)),space = 5)
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+p<-ggplot(data=data$Outcome, aes(x=dose, y=len)) +
+geom_bar(stat="identity")
+p<-ggplot(data=as.factor(data$Outcome), aes(x=dose, y=len)) +
+geom_bar(stat="identity")
+sub<-data[,c(9,1)]
+sub
+p<-ggplot(sub, aes(x=dose, y=len)) +
+geom_bar(stat="identity")
+p
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity")
+p
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity", fill="steelblue")+
+theme_minimal()
+p
+library(plotly)
+p <- plot_ly(
+x = c("giraffes", "orangutans", "monkeys"),
+y = c(20, 14, 23),
+name = "SF Zoo",
+type = "bar"
+)
+library(plotly)
+checkInstallLoad("plotly")
+install.packages(libName)
+p <- plot_ly(
+x = data$Outcome,
+y = data$Pregnancies,
+name = "BAR!!!",
+type = "bar"
+)
+library(plotly)
+installed.packages("plotly")
+install.packages("plotly")
+install.packages("plotly")
+install.packages("plotly")
+install.packages("plotly")
+library(plotly)
+install.packages("tibble")
+install.packages("tibble")
+library(plotly)
+update.packages("tibble")
+library(plotly)
+p <- plot_ly(
+x = data$Outcome,
+y = data$Pregnancies,
+name = "BAR!!!",
+type = "bar"
+)
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+boxplot(data$BloodPressure~data$Outcome)
+boxplot(data$SkinThickness~data$Outcome)
+boxplot(data$Insulin~data$Outcome)
+boxplot(data$BMI~data$Outcome)
+boxplot(data$DiabetesPedigreeFunction~data$Outcome)
+boxplot(data$Age~data$Outcome)
+data_n<-data[,c(2,3,4,5,6,7,8)]
+plot(data_n)
+library(treemap)
+install.packages("treemap")
+library(treemap)
+treemap(sub, #Your data frame object
+index="Outcome",  #A list of your categorical variables
+vSize = "Pregnancies",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+sub<-data[,c(9,1,5)]
+treemap(sub, #Your data frame object
+index=c("Pregnancies","Outcome"),  #A list of your categorical variables
+vSize = "Insulin",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+source("Libraries.R")
+knitr::opts_chunk$set(echo = TRUE)
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+source("Data.R")
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+hist(data$Age)
+data<-read.csv("diabetes.csv",header = T)
+View(head(data))
+setwd("C:/Users/Mohammed/Desktop/Packt_R_Codes/DemoR_Section4")
+source("Libraries.R")
+source("Data.R")
+hist(data$Age)
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+sub<-data[,c(9,1)]
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity", fill="steelblue")+
+theme_minimal()
+p
+sub<-data[,c(9,1,5)]
+library(treemap)
+treemap(sub, #Your data frame object
+index=c("Pregnancies","Outcome"),  #A list of your categorical variables
+vSize = "Insulin",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+boxplot(data$BloodPressure~data$Outcome)
+boxplot(data$SkinThickness~data$Outcome)
+boxplot(data$Insulin~data$Outcome)
+boxplot(data$BMI~data$Outcome)
+boxplot(data$DiabetesPedigreeFunction~data$Outcome)
+boxplot(data$Age~data$Outcome)
+data_n<-data[,c(2,3,4,5,6,7,8)]
+plot(data_n)
+cor<-cor(data)
+corrplot(cor)
+hist(data$Age)
+knitr::opts_chunk$set(echo = TRUE)
+hist(data$Age)
+knitr::opts_chunk$set(echo = TRUE)
+hist(data$Age)
+```{r}
+hist(data$Age)
+knitr::opts_chunk$set(echo = TRUE)
+hist(data$Age)
+hist(as.numeric(data$Age))
+hist(as.numeric(data$Pregnancies))
+#Author @ Mohammed
+#Pact Publishing Section 4
+#Code used to Fetch/install/Load all libraries required
+#setwd("D:/Packt_R_Codes/DemoR_Section4")
+print("============== Beginning to load libraries  ===================")
+#Function To check if
+checkInstallLoad <- function(libName)
+{
+if(!require(libName, character.only=TRUE))
+{
+install.packages(libName)
+require(libName, character.only=TRUE)
+}
+}
+checkInstallLoad("class")
+checkInstallLoad("data.table")
+checkInstallLoad("ggplot2")
+print("============== Completed loading libraries  ===================")
+data<-read.csv("diabetes.csv",header = T)
+View(head(data))
+hist(data$Age)
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+sub<-data[,c(9,1)]
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity", fill="steelblue")+
+theme_minimal()
+p
+sub<-data[,c(9,1,5)]
+library(treemap)
+treemap(sub, #Your data frame object
+index=c("Pregnancies","Outcome"),  #A list of your categorical variables
+vSize = "Insulin",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+boxplot(data$BloodPressure~data$Outcome)
+boxplot(data$SkinThickness~data$Outcome)
+boxplot(data$Insulin~data$Outcome)
+boxplot(data$BMI~data$Outcome)
+boxplot(data$DiabetesPedigreeFunction~data$Outcome)
+boxplot(data$Age~data$Outcome)
+data_n<-data[,c(2,3,4,5,6,7,8)]
+plot(data_n)
+cor<-cor(data)
+corrplot(cor)
+cor<-cor(data)
+corrplot(cor)
+source("Libraries.R")
+source("Data.R")
+View(head(data))
+hist(data$Age)
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+sub<-data[,c(9,1)]
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity", fill="steelblue")+
+theme_minimal()
+checkInstallLoad("ggplot2")
+install.packages("ggplot2")
+checkInstallLoad("ggplot2")
+sub<-data[,c(9,1)]
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity", fill="steelblue")+
+theme_minimal()
+p
+sub<-data[,c(9,1,5)]
+library(treemap)
+treemap(sub, #Your data frame object
+index=c("Pregnancies","Outcome"),  #A list of your categorical variables
+vSize = "Insulin",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+checkInstallLoad("treemap")
+treemap(sub, #Your data frame object
+index=c("Pregnancies","Outcome"),  #A list of your categorical variables
+vSize = "Insulin",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+boxplot(data$BloodPressure~data$Outcome)
+boxplot(data$SkinThickness~data$Outcome)
+boxplot(data$Insulin~data$Outcome)
+boxplot(data$BMI~data$Outcome)
+boxplot(data$DiabetesPedigreeFunction~data$Outcome)
+boxplot(data$Age~data$Outcome)
+data_n<-data[,c(2,3,4,5,6,7,8)]
+cor<-cor(data)
+corrplot(cor)
+knitr::opts_chunk$set(echo = TRUE)
+hist(data$Age)
+dat<-data
+hist(dat$Age)
+hist(dat$Age)
+View(head(dat))
+dat<-read.csv("diabetes.csv",header = T)
+head(dat)
+hist(dat$Age)
+rm(list=ls())
+source("Libraries.R")
+source("Data.R")
+hist(data$Age)
+barplot(table(as.factor(data$Pregnancies)),space =0.01)
+sub<-data[,c(9,1)]
+p<-ggplot(sub, aes(x=Outcome, y=Pregnancies)) +
+geom_bar(stat="identity", fill="steelblue")+
+theme_minimal()
+p
+sub<-data[,c(9,1,5)]
+treemap(sub, #Your data frame object
+index=c("Pregnancies","Outcome"),  #A list of your categorical variables
+vSize = "Insulin",  #This is your quantitative variable
+type="index", #Type sets the organization and color scheme of your treemap
+palette = "Reds",  #Select your color palette from the RColorBrewer presets or make your own.
+title="TreeMap", #Customize your title
+fontsize.title = 14 #Change the font size of the title
+)
+head(data)
+plot(as.factor(data$Outcome)~as.factor(data$Pregnancies))
+boxplot(data$Glucose~data$Outcome)
+boxplot(data$BloodPressure~data$Outcome)
+boxplot(data$SkinThickness~data$Outcome)
+boxplot(data$Insulin~data$Outcome)
+boxplot(data$BMI~data$Outcome)
+boxplot(data$DiabetesPedigreeFunction~data$Outcome)
+boxplot(data$Age~data$Outcome)
+data_n<-data[,c(2,3,4,5,6,7,8)]
+plot(data_n)
+Print("============================End OF EDA==================================")
+print("============================End OF EDA==================================")
+knitr::opts_chunk$set(echo = TRUE)
+dat<-read.csv("diabetes.csv",header = T)
+head(dat)
+hist(dat$Age)

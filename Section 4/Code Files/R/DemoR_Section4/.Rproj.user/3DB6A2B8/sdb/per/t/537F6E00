@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"R Notebook\"\noutput: html_notebook\n---\n\nEDA on PIMA INDIAN DIABETES data set\n```{r}\nhist(data$Age)\n```\nInference -> Our data set mostly consists of young people.\n",
+    "created" : 1507939682032.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2317051956",
+    "id" : "537F6E00",
+    "lastKnownWriteTime" : 1507939838,
+    "last_content_update" : 1507939838,
+    "path" : "C:/Users/Mohammed/Desktop/RMarkdownV4.1",
+    "project_path" : null,
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

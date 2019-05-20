@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Author @ Mohammed \n# Pact Publishing Section 3\n# Code used to load data\nsource(\"Libraries.r\")\n\ndata<-read.csv(file = \"AdultDataSet.csv\",header = TRUE)\n\n#Load data\ndata<-read.csv(\"despo.csv\",header = T)\nndata<-data\ntable(as.factor(data$type_employer))\n#Here we have 1836 Missing values\ndata<-data[data$type_employer!=\"?\",]\nsummary(data$type_employer)\n\n\n#Occupation\ntable(as.factor(data$occupation))\n#Here we have 1843 Missing values\ndata<-data[data$occupation!=\"?\",]\nsummary(data$occupation)\n\n\ntable(as.factor(data$country))\n#Here we have 583 Missing values\ndata<-data[data$country!=\"?\",]\nsummary(data$country)\n\n\n\n#This is the CSV FILE WE WILL USE FOR REFERENCE\nwrite.csv(ndata,\"AdultDataSet_WITHOUT_NA.csv\")\n#=========================================\n",
+    "created" : 1506358242165.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2176858246",
+    "id" : "BD2F71A",
+    "lastKnownWriteTime" : 1506358705,
+    "last_content_update" : 1506358705,
+    "path" : "D:/Packt_R_Codes/DemoR_Section3/CleaningData.R",
+    "project_path" : "CleaningData.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

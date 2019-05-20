@@ -1,0 +1,23 @@
+---
+title: "PResent.md"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Awesome this is our first EDA Report
+
+We Can Use Markdowns to make awesome stylish **EDA** Reports
+
+
+
+```{r }
+dat<-read.csv("diabetes.csv",header = T)
+head(dat)
+```
+
+```{r }
+hist(dat$Age)
+```

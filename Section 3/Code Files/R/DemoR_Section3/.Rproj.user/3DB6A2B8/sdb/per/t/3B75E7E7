@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Author @ Mohammed \n# Pact Publishing Section 3\n# Code used to load data\nsource(\"Libraries.r\")\n\ndata<-read.csv(file = \"AdultDataSet.csv\",header = TRUE)\n\nView(head(data,20))\n\nndat<-data\n\n# Here its obvious that age is numeric \n\n#But what about type_employer , how can you simply conclude from 10 rows what is its type/class\n\nsummary(ndat$type_employer)\nclass(ndat$type_employer)\n# From this we verify and know that its type is factor\n\nsummary(ndat$fnlwgt)\n\n",
+    "created" : 1506357303201.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3609021963",
+    "id" : "3B75E7E7",
+    "lastKnownWriteTime" : 1506358237,
+    "last_content_update" : 1506358237806,
+    "path" : "D:/Packt_R_Codes/DemoR_Section3/Understanding_Data.R",
+    "project_path" : "Understanding_Data.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

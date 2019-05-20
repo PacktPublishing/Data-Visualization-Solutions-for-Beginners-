@@ -1,0 +1,109 @@
+setwd("D:/Unicom_R_Codes/DemoR_Section3")
+print("Loading datasets complete.")
+#Author @ Mohammed
+# Pact Publishing Section 3
+# Code used to load data
+source("Libraries.r")
+#Downloading adult income data set from UCI
+print("Downloading Data")
+data = read.table("http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+sep=",",header=F,
+col.names=c("age", "type_employer", "fnlwgt", "education",
+"education_num","marital", "occupation", "relationship", "race","sex",
+"capital_gain", "capital_loss", "hr_per_week","country", "income"),
+fill=FALSE,strip.white=T)
+print("Data Loaded")
+print("Loading datasets complete.")
+write.csv(x = data,file = "AdultDataSet.csv")
+View(head(data,20))
+ndat<-data
+summary(ndat$type_employer)
+type(ndat$type_employer)
+typeof(ndat$type_employer)
+class(ndat$type_employer)
+summary(ndat$fnlwgt)
+table(as.factor(data$occupation))
+summary(data$occupation)
+table(as.factor(data$country))
+summary(data$country)
+table(as.factor(data$type_employer))
+data<-data[data$type_employer!="?"]
+data<-data[[data$type_employer!="?"]]
+data<-data[data$type_employer!="?"]
+data<-data[data$type_employer!="?",]
+summary(data$type_employer)
+table(as.factor(data$occupation))
+data<-data[data$occupation!="?",]
+summary(data$occupation)
+table(as.factor(data$country))
+data<-data[data$country!="?",]
+summary(data$country)
+rm(list=ls())
+data = read.table("http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+sep=",",header=F,
+col.names=c("age", "type_employer", "fnlwgt", "education",
+"education_num","marital", "occupation", "relationship", "race","sex",
+"capital_gain", "capital_loss", "hr_per_week","country", "income"),
+fill=FALSE,strip.white=T)
+summary(data)
+data[1:1]
+data[1,1]
+data[0,0]
+data[0,1]
+data[0,2]
+data[1,2]
+data[1,1]
+data[1,2]
+data[2,1]
+view(head(data))
+View(head(data))
+source("Libraries.r")
+setwd("D:/Packt_R_Codes/DemoR_Section3")
+source("Libraries.r")
+mydb = dbConnect(MySQL(), user='root', password='root', dbname='packt', host='host')
+library(RMySQL)
+mydb = dbConnect(MySQL(), user='root', password='root', dbname='packt', host='host')
+checkInstallLoad("RMySQL")
+mydb = dbConnect(MySQL(), user='root', password='root', dbname='packt', host='127.0.0.1')
+dbListTables(mydb)
+rs = dbSendQuery(mydb, "select * from adultdataset")
+data = fetch(rs, n=-1)
+View(head(data))
+source("Libraries.r")
+print("Downloading Data")
+data = read.table("http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+sep=",",header=F,
+col.names=c("age", "type_employer", "fnlwgt", "education",
+"education_num","marital", "occupation", "relationship", "race","sex",
+"capital_gain", "capital_loss", "hr_per_week","country", "income"),
+fill=FALSE,strip.white=T)
+print("Data Loaded")
+print("Loading datasets complete.")
+write.csv(x = data,file = "AdultDataSet.csv")
+source("Libraries.r")
+mydb = dbConnect(MySQL(), user='root', password='root', dbname='packt', host='127.0.0.1')
+dbListTables(mydb)
+rs = dbSendQuery(mydb, "select * from adultdataset")
+data = fetch(rs, n=-1)
+View(head(data))
+rm(list=ls())
+source("Libraries.r")
+data<-read.csv(file = "AdultDataSet.csv",header = TRUE)
+View(head(data,20))
+ndat<-data
+summary(ndat$type_employer)
+class(ndat$type_employer)
+summary(as.factor(ndat$type_employer))
+summary(ndat$fnlwgt)
+data<-read.csv(file = "AdultDataSet.csv",header = TRUE)
+ndata<-data
+table(as.factor(data$type_employer))
+data<-data[data$type_employer!="?",]
+summary(data$type_employer)
+table(as.factor(data$occupation))
+data<-data[data$occupation!="?",]
+summary(data$occupation)
+table(as.factor(data$country))
+data<-data[data$country!="?",]
+summary(data$country)
+write.csv(ndata,"AdultDataSet_WITHOUT_NA.csv")
